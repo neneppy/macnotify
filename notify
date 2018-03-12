@@ -1,0 +1,11 @@
+#/bin/bash
+exedir=`pwd`
+mkdir ~/.notifyinfo
+cd ~/.notifyinfo
+echo $1 > main
+echo $2 > title
+cd $exedir
+cd res
+open 通知.app
+sleep 2s
+rm -rf ~/.notifyinfo
